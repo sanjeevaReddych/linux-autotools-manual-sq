@@ -4,7 +4,7 @@ node {
   }
   
   stage('SonarQube Analysis') {
-    chmod 777 analyze.sh
+    sh "chmod 777 analyze.sh"
     sh "./analyze.sh"
   }
 }
