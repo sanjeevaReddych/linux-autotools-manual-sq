@@ -1,0 +1,9 @@
+node {
+  stage('SCM') {
+    checkout scm
+  }
+  
+  stage('SonarQube Analysis') {
+    sh "./build-analyze-project.sh"
+  }
+}
