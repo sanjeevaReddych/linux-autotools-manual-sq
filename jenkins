@@ -4,6 +4,6 @@ node {
   }
   
   stage('SonarQube Analysis') {
-    sh "./build-analyze-project.sh"
+    sh "./analyze.sh"
   }
 }
